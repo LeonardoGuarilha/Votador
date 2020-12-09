@@ -1,0 +1,12 @@
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/bin/Debug/net5.0/Votador.Compartilhado.deps.json
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/bin/Debug/net5.0/Votador.Compartilhado.dll
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/bin/Debug/net5.0/ref/Votador.Compartilhado.dll
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/bin/Debug/net5.0/Votador.Compartilhado.pdb
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/obj/Debug/net5.0/Votador.Compartilhado.csprojAssemblyReference.cache
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/obj/Debug/net5.0/Votador.Compartilhado.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/obj/Debug/net5.0/Votador.Compartilhado.AssemblyInfoInputs.cache
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/obj/Debug/net5.0/Votador.Compartilhado.AssemblyInfo.cs
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/obj/Debug/net5.0/Votador.Compartilhado.csproj.CoreCompileInputs.cache
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/obj/Debug/net5.0/Votador.Compartilhado.dll
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/obj/Debug/net5.0/ref/Votador.Compartilhado.dll
+/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/obj/Debug/net5.0/Votador.Compartilhado.pdb

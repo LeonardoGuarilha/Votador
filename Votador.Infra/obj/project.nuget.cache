@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "PGQ1f/2MbEu4J0gCZK+zsFmfnqLZ6Y/VR7VUz39ab4uOsXJZj/GjzYct3blKMKnhF9lcJakkIOzFnfrizDRSkQ==",
+  "success": true,
+  "projectFilePath": "/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/Votador.Infra.csproj",
+  "expectedPackageFiles": [
+    "/Users/leonardoguarilha/.nuget/packages/dapper/2.0.78/dapper.2.0.78.nupkg.sha512",
+    "/Users/leonardoguarilha/.nuget/packages/flunt/1.0.5/flunt.1.0.5.nupkg.sha512",
+    "/Users/leonardoguarilha/.nuget/packages/npgsql/5.0.0/npgsql.5.0.0.nupkg.sha512",
+    "/Users/leonardoguarilha/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

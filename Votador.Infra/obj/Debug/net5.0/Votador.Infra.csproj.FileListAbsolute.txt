@@ -1,0 +1,17 @@
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/bin/Debug/net5.0/Votador.Infra.deps.json
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/bin/Debug/net5.0/Votador.Infra.dll
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/bin/Debug/net5.0/ref/Votador.Infra.dll
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/bin/Debug/net5.0/Votador.Infra.pdb
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/bin/Debug/net5.0/Votador.Compartilhado.dll
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/bin/Debug/net5.0/Votador.Dominio.dll
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/bin/Debug/net5.0/Votador.Dominio.pdb
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/bin/Debug/net5.0/Votador.Compartilhado.pdb
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/obj/Debug/net5.0/Votador.Infra.csprojAssemblyReference.cache
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/obj/Debug/net5.0/Votador.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/obj/Debug/net5.0/Votador.Infra.AssemblyInfoInputs.cache
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/obj/Debug/net5.0/Votador.Infra.AssemblyInfo.cs
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/obj/Debug/net5.0/Votador.Infra.csproj.CoreCompileInputs.cache
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/obj/Debug/net5.0/Votador.Infra.csproj.CopyComplete
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/obj/Debug/net5.0/Votador.Infra.dll
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/obj/Debug/net5.0/ref/Votador.Infra.dll
+/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/obj/Debug/net5.0/Votador.Infra.pdb

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q0wBqHqEP6foAgucYNWsrkTbwzxsV6I7vCNPb12tfyfpy6PRwr5IL5oSERGYTQ7DdSDsq0+Oj3uA6/p91VklRg==",
+  "success": true,
+  "projectFilePath": "/Users/leonardoguarilha/Desktop/Votador/Votador.Compartilhado/Votador.Compartilhado.csproj",
+  "expectedPackageFiles": [
+    "/Users/leonardoguarilha/.nuget/packages/flunt/1.0.5/flunt.1.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
