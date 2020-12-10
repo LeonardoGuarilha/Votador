@@ -7,7 +7,7 @@ namespace Votador.Compartilhado.Entidades
     {
         protected Entidade()
         {
-            Id = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8);
+            Id = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8).ToUpper();
         }
         public string Id { get; private set; }
     }

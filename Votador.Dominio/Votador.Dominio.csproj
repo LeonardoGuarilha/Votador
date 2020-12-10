@@ -6,6 +6,20 @@
 
   <ItemGroup>
     <PackageReference Include="flunt" Version="1.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ObjetoValor\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ObjetoValor\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ObjetoValor\**" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1,3 +1,4 @@
+using Votador.Dominio.Consultas;
 using Votador.Dominio.Entidades;
 
 namespace Votador.Dominio.Repositorios
@@ -5,6 +6,8 @@ namespace Votador.Dominio.Repositorios
     public interface IFuncionarioRepositorio
     {
         void Salvar(Funcionario funcionario);
-        bool EmailExiste(string email);
+        RetornarEmailConsultaResultado EmailExiste(string email);
+
+        Funcionario UsuarioExiste(string email);
     }
 }

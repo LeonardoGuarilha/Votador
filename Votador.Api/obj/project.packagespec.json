@@ -1,0 +1,76 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/leonardoguarilha/Desktop/Votador/Votador.Api/Votador.Api.csproj",
+    "projectName": "Votador.Api",
+    "projectPath": "/Users/leonardoguarilha/Desktop/Votador/Votador.Api/Votador.Api.csproj",
+    "outputPath": "/Users/leonardoguarilha/Desktop/Votador/Votador.Api/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net50"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp5.0": {
+        "projectReferences": {
+          "/Users/leonardoguarilha/Desktop/Votador/Votador.Dominio/Votador.Dominio.csproj": {
+            "projectPath": "/Users/leonardoguarilha/Desktop/Votador/Votador.Dominio/Votador.Dominio.csproj"
+          },
+          "/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/Votador.Infra.csproj": {
+            "projectPath": "/Users/leonardoguarilha/Desktop/Votador/Votador.Infra/Votador.Infra.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp5.0": {
+      "dependencies": {
+        "Microsoft.AspNetCore.Authentication.JwtBearer": {
+          "target": "Package",
+          "version": "[5.0.0, )",
+          "noWarn": [
+            "NU1605"
+          ]
+        },
+        "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+          "target": "Package",
+          "version": "[5.0.0, )",
+          "noWarn": [
+            "NU1605"
+          ]
+        },
+        "Swashbuckle.AspNetCore": {
+          "target": "Package",
+          "version": "[5.6.3, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+    }
+  }
+}

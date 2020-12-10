@@ -1,29 +1,32 @@
 using System.Text;
 using Flunt.Validations;
 using Votador.Compartilhado.Entidades;
-using Votador.Dominio.ObjetoValor;
 
 namespace Votador.Dominio.Entidades
 {
     public class Funcionario : Entidade
     {
-        public Funcionario(Email email, string senha)
+        public Funcionario()
+        {
+            
+        }
+        public Funcionario(string email, string senha)
         {
             Email = email;
             Senha = HashSenha(senha);
 
             AddNotifications(new Contract()
                 .Requires()
-                .IsNotNullOrEmpty(Email.Endereco, "Email", "E-mail não pode ser vazio")
+                .IsNotNullOrEmpty(Email, "Email", "E-mail não pode ser vazio")
                 .IsNotNullOrEmpty(Senha, "Senha", "A senha não pode ser vazia")
             );
         }
-        public Email Email { get; private set; }
+        public string Email { get; private set; }
         public string Senha { get; private set; }
 
         public bool Autenticar(string email, string senha)
         {
-            if (Email.Endereco == email && Senha == HashSenha(senha)) // Qualquer coisa, retirar o ValueObject
+            if (Email == email && Senha == HashSenha(senha)) // Qualquer coisa, retirar o ValueObject
                 return true;
 
             AddNotification("User", "Usuário ou senha inválidos");
