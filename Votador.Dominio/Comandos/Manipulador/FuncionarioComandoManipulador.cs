@@ -31,7 +31,7 @@ namespace Votador.Dominio.Comandos.Manipulador
                     new {});
             }
             
-            var funcionario = new Funcionario(comando.Email, comando.Senha);
+            var funcionario = new Funcionario(comando.Nome, comando.Email, comando.Senha);
 
             AddNotifications(funcionario.Notifications);
             
@@ -39,7 +39,7 @@ namespace Votador.Dominio.Comandos.Manipulador
                 _repositorio.Salvar(funcionario);
             else
             {
-                return new ResultadoComando(false, "Ocorreu um erro ao salvar o funcionário", new {comando.Email});
+                return new ResultadoComando(false, "Ocorreu um erro ao salvar o funcionário", new {funcionario.Notifications});
             }
 
             return new ResultadoComando(

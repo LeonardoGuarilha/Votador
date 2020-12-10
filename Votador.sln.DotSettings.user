@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=48e182d2_002D30f6_002D49c7_002D972f_002D94d20458993a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Deve_cadastrar_um_funcionario_caso_informacoes_corretas" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;MSTest::F883D152-986E-4155-8819-E6425F2A3CB0::.NETCoreApp,Version=v5.0::Votador.Testes.Manipuladores.FuncionarioComandoManipuladorTeste.Deve_cadastrar_um_funcionario_caso_informacoes_corretas&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::F883D152-986E-4155-8819-E6425F2A3CB0::.NETCoreApp,Version=v5.0::Votador.Testes.Manipuladores.AutenticarComandoManipuladorTeste.Deve_autenticar_funcionario_com_informacoes_corretas&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e1d99e16_002D0017_002D4a2a_002Dad99_002D5efd64152c8a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Deve_cadastrar_um_funcionario_caso_informacoes_corretas #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;MSTest::F883D152-986E-4155-8819-E6425F2A3CB0::.NETCoreApp,Version=v5.0::Votador.Testes.Manipuladores.FuncionarioComandoManipuladorTeste.Deve_cadastrar_um_funcionario_caso_informacoes_corretas&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::F883D152-986E-4155-8819-E6425F2A3CB0::.NETCoreApp,Version=v5.0::Votador.Testes.Manipuladores.AutenticarComandoManipuladorTeste.Deve_autenticar_funcionario_com_informacoes_corretas&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

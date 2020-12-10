@@ -18,11 +18,12 @@ namespace Votador.Infra.Repositorio
         }
         public void Salvar(Funcionario funcionario)
         {
-            var query = "INSERT INTO funcionario (id, email, senha) values (@id, @email, @senha)";
+            var query = "INSERT INTO funcionario (id, nome, email, senha) values (@id, @nome, @email, @senha)";
             _context.Conexao.Execute(query,
                 new
                 {
                     Id = funcionario.Id,
+                    Nome = funcionario.Nome,
                     Email = funcionario.Email,
                     Senha = funcionario.Senha
                 });

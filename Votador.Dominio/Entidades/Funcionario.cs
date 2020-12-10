@@ -10,17 +10,21 @@ namespace Votador.Dominio.Entidades
         {
             
         }
-        public Funcionario(string email, string senha)
+        public Funcionario(string nome, string email, string senha)
         {
+            Nome = nome;
             Email = email;
             Senha = HashSenha(senha);
 
             AddNotifications(new Contract()
                 .Requires()
+                .IsNotNullOrEmpty(Nome, "Nome", "Nome não pode ser vazio")
                 .IsNotNullOrEmpty(Email, "Email", "E-mail não pode ser vazio")
                 .IsNotNullOrEmpty(Senha, "Senha", "A senha não pode ser vazia")
             );
         }
+
+        public string Nome { get; private set; }
         public string Email { get; private set; }
         public string Senha { get; private set; }
 

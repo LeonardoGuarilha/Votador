@@ -7,7 +7,6 @@ namespace Votador.Infra.DataContext
 {
     public class VotadorDataContext : IDisposable
     {
-
         public NpgsqlConnection Conexao { get; set; }
 
         public VotadorDataContext()
