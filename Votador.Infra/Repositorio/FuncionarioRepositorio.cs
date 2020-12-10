@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Dapper;
@@ -45,6 +46,13 @@ namespace Votador.Infra.Repositorio
             var retorno = _context.Conexao.Query<Funcionario>(query, new {Email = email}).FirstOrDefault();
 
             return retorno;
+        }
+
+        public IEnumerable<RetornarFuncionarioConsulta> RetornarUsuarios()
+        {
+            var query = "SELECT nome, email from funcionario";
+
+            return _context.Conexao.Query<RetornarFuncionarioConsulta>(query);
         }
     }
 }

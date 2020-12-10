@@ -9,11 +9,11 @@ namespace Votador.Api.Controllers
     [Route("v1/recursos")]
     public class RecuperarRecursosController : Controller
     {
-        private readonly IRecuperarRecursosRepository _repository;
+        private readonly IRecuperarRecursosRepository _repositorio;
 
-        public RecuperarRecursosController(IRecuperarRecursosRepository repository)
+        public RecuperarRecursosController(IRecuperarRecursosRepository repositorio)
         {
-            _repository = repository;
+            _repositorio = repositorio;
         }
 
         [HttpGet]
@@ -21,8 +21,7 @@ namespace Votador.Api.Controllers
         [Authorize]
         public IEnumerable<RetornarRecursoConsulta> Get()
         {
-            return _repository.RecuperarRecursos();
+            return _repositorio.RecuperarRecursos();
         }
-        
     }
 }

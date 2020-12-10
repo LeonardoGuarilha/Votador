@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Votador.Dominio.Consultas;
 using Votador.Dominio.Entidades;
 using Votador.Dominio.Repositorios;
@@ -20,6 +21,11 @@ namespace Votador.Testes.RepositoriosFalsos
         {
             var funcionario = new Funcionario("Leonardo", "email@email.com", "123456");
             return funcionario;
+        }
+
+        public IEnumerable<RetornarFuncionarioConsulta> RetornarUsuarios()
+        {
+            return null;
         }
     }
 }

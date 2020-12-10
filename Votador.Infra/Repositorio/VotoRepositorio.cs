@@ -33,7 +33,7 @@ namespace Votador.Infra.Repositorio
 
         public RetornarIdVoto FuncionarioJaVotouNaTarefa(string funcionarioId, string recursoId)
         {
-            var query = @"SELECT id FROM voto WHERE funcionarioId = @funcionarioId and recursoId = @recursoId";
+            var query = @"SELECT id FROM comentario WHERE funcionarioId = @funcionarioId and recursoId = @recursoId";
             
             return _context.Conexao.Query<RetornarIdVoto>(query, new {FuncionarioId = funcionarioId, RecursoId = recursoId}).FirstOrDefault();
             

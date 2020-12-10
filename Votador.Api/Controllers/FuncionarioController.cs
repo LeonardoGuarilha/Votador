@@ -1,8 +1,10 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Votador.Compartilhado.Comando;
 using Votador.Dominio.Comandos.Entrada;
 using Votador.Dominio.Comandos.Manipulador;
+using Votador.Dominio.Consultas;
 using Votador.Dominio.Repositorios;
 
 namespace Votador.Api.Controllers
@@ -11,10 +13,12 @@ namespace Votador.Api.Controllers
     public class FuncionarioController : Controller
     {
         private FuncionarioComandoManipulador _manipulador;
+        private IFuncionarioRepositorio _repositorio;
 
-        public FuncionarioController(FuncionarioComandoManipulador manipulador)
+        public FuncionarioController(FuncionarioComandoManipulador manipulador, IFuncionarioRepositorio repositorio)
         {
             _manipulador = manipulador;
+            _repositorio = repositorio;
         }
 
         [HttpPost]
@@ -24,6 +28,14 @@ namespace Votador.Api.Controllers
         {
             var resultado = _manipulador.Manipular(comando);
             return resultado;
+        }
+        
+        [HttpGet]
+        [Route("")]
+        [AllowAnonymous]
+        public IEnumerable<RetornarFuncionarioConsulta> Get()
+        {
+            return _repositorio.RetornarUsuarios();
         }
 
     }
