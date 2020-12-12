@@ -45,7 +45,9 @@ namespace Votador.Dominio.Comandos.Manipulador
                 if (!Invalid)
                 {
                     _repositorioComentario.Salvar(comentarioAtualizado);
+                    
                     _repositorio.AtualizarVotoRecurso(comando.RecursoId);
+                    
                     return new ResultadoComando(
                         true, 
                         "Voto computado com sucesso!", 
@@ -59,7 +61,7 @@ namespace Votador.Dominio.Comandos.Manipulador
             }
             
             var voto = new Voto(comando.FuncionarioId, comando.RecursoId, comando.Gostei);
-            var comentario = new Comentario(comando.Comentario, comando.RecursoId, comando.FuncionarioId); 
+            var comentario = new Comentario(comando.Comentario, comando.RecursoId, comando.FuncionarioId);
             
             AddNotifications(voto.Notifications);
             AddNotifications(comentario.Notifications);
@@ -67,7 +69,9 @@ namespace Votador.Dominio.Comandos.Manipulador
             if (!Invalid)
             { 
                 _repositorioComentario.Salvar(comentario);
+                
                 _repositorio.Salvar(voto);
+                
                 return new ResultadoComando(
                     true, 
                     "Voto computado com sucesso!", 

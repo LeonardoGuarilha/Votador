@@ -10,7 +10,6 @@ namespace Votador.Dominio.Entidades
         {
             FuncionarioId = funcionarioId;
             RecursoId = tarefaId;
-            //Comentario = comentario;
             HoraVoto = DateTime.Now;
             Gostei = gostei;
             QuantidadeVotos = 1;
@@ -24,7 +23,6 @@ namespace Votador.Dominio.Entidades
         
         public string FuncionarioId { get; private set; }
         public string RecursoId { get; private set; }
-        // public string Comentario { get; private set; }
         public DateTime HoraVoto { get; private set; }
         public bool Gostei { get; set; }
         public int QuantidadeVotos { get; private set; }

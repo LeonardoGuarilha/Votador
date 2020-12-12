@@ -28,6 +28,7 @@ namespace Votador.Dominio.Comandos.Manipulador
             if (!Invalid)
             {
                 _repositorio.Salvar(recurso);
+                
                 return new ResultadoComando(
                     true, 
                     "Recurso cadastrado com sucesso!", 

@@ -26,10 +26,11 @@ namespace Votador.Dominio.Comandos.Manipulador
             if (usuario == null)
             {
                 AddNotification("Email", "Ocorreu um erro na autenticação");
+                
                 return new ResultadoComando(
                     false, 
                     "Ocorreu um erro na autenticação", 
-                    new {});
+                    new {mensagem = "Usuário não existe"});
             }
 
             if (usuario.Autenticar(comando.Email, comando.Senha))
@@ -37,15 +38,17 @@ namespace Votador.Dominio.Comandos.Manipulador
                 return new ResultadoComando(
                     true, 
                     "Logado com sucesso", 
-                    new {Token = ServicoToken.GerarToken(usuario)});
+                    new {Usuario = usuario, Token = ServicoToken.GerarToken(usuario)});
+                // Verificar no frontend a necessidade de retornar o usuario completo
             }
             else
             {
                 AddNotification("Email", "Ocorreu um erro na autenticação");
+                
                 return new ResultadoComando(
                     false, 
                     "Ocorreu um erro na autenticação", 
-                    new {});
+                    new {erro = comando.Notifications});
             }
         }
     }

@@ -25,6 +25,7 @@ namespace Votador.Dominio.Comandos.Manipulador
             if (emailExiste != null)
             {
                 AddNotification("Email", "Email já está cadastrado");
+                
                 return new ResultadoComando(
                     false, 
                     "Ocorreu um erro ao salvar o funcionário", 

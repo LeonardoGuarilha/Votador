@@ -17,9 +17,17 @@ namespace Votador.Api.Controllers
         }
 
         [HttpGet]
-        [Route("")]
+        [Route("contador")]
         [Authorize]
         public IEnumerable<RetornarRecursoConsulta> Get()
+        {
+            return _repositorio.RecuperarRecursosContador();
+        }
+        
+        [HttpGet]
+        [Route("")]
+        [Authorize]
+        public IEnumerable<RecuperarNomeRecursos> GetAll()
         {
             return _repositorio.RecuperarRecursos();
         }

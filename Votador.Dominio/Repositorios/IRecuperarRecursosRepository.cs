@@ -6,6 +6,7 @@ namespace Votador.Dominio.Repositorios
 {
     public interface IRecuperarRecursosRepository
     {
-        IEnumerable<RetornarRecursoConsulta> RecuperarRecursos();
+        IEnumerable<RetornarRecursoConsulta> RecuperarRecursosContador();
+        IEnumerable<RecuperarNomeRecursos> RecuperarRecursos();
     }
 }

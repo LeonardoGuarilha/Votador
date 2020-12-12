@@ -41,7 +41,7 @@ namespace Votador.Infra.Repositorio
 
         public Funcionario UsuarioExiste(string email)
         { 
-            var query = "SELECT id, email, senha from funcionario where funcionario.email =@Email";
+            var query = "SELECT id, nome, email, senha from funcionario where funcionario.email =@Email";
 
             var retorno = _context.Conexao.Query<Funcionario>(query, new {Email = email}).FirstOrDefault();
 

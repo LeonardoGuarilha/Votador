@@ -17,13 +17,19 @@ namespace Votador.Infra.Repositorio
             _context = context;
         }
         
-        public IEnumerable<RetornarRecursoConsulta> RecuperarRecursos()
+        public IEnumerable<RetornarRecursoConsulta> RecuperarRecursosContador()
         {
             var stringBuilder = new StringBuilder();
-            stringBuilder.Append(@"select r.titulo , v.quantidadevotos from recurso r ");
+            stringBuilder.Append(@"select r.id, r.titulo , v.quantidadevotos from recurso r ");
             stringBuilder.Append(@"left join voto v on v.recursoid = r.id ");
 
             return  _context.Conexao.Query<RetornarRecursoConsulta>(stringBuilder.ToString());
+        }
+
+        public IEnumerable<RecuperarNomeRecursos> RecuperarRecursos()
+        {
+            var query = "SELECT id, titulo from recurso";
+            return _context.Conexao.Query<RecuperarNomeRecursos>(query);
         }
     }
 }

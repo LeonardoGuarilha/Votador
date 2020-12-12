@@ -30,7 +30,7 @@ namespace Votador.Dominio.Entidades
 
         public bool Autenticar(string email, string senha)
         {
-            if (Email == email && Senha == HashSenha(senha)) // Qualquer coisa, retirar o ValueObject
+            if (Email == email && Senha == HashSenha(senha))
                 return true;
 
             AddNotification("User", "Usuário ou senha inválidos");
